@@ -1,0 +1,43 @@
+.sidebar{
+    // background-color: aqua;
+    margin: 1rem 3rem;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        box-sizing: border-box;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 1.5rem 3rem rgba(#000, .2);
+        padding: 3rem 2rem;
+    }
+
+    &__link{
+        display: flex;
+        align-items: center;
+
+        &-icon{
+            height: 2rem;
+            width: 2rem;
+            color: grey;
+            margin-right: 2rem;
+        }
+
+        &-text{
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #000;
+            font-family: sans-serif;
+        }
+
+        &:hover,
+        &:active{
+            box-sizing: border-box;
+            display: flex;
+            box-shadow: 0 1.5rem 3rem rgba(#000, .2);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+    }
+}

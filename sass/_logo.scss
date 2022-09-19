@@ -1,0 +1,38 @@
+.header{
+    // background-color: #fff;
+    margin: 3rem;
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        &-text{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__sold{
+        font-size: 1rem;
+        font-family: sans-serif;
+        color: lightgrey;
+
+        &-text{
+            font-size: 2rem;
+            font-family: sans-serif;
+        }
+    }
+
+    &__img{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__user{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+    }
+}
