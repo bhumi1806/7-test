@@ -14,6 +14,7 @@ body {
   font-weight: 300; }
 
 .container {
+  height: 100vh;
   display: grid;
   grid-template-columns: 24rem 4fr 3fr;
   grid-template-rows: 2fr 5fr;
@@ -27,11 +28,184 @@ body {
   font-size: 2rem;
   font-family: sans-serif; }
 
+.heading-3 {
+  font-size: 1.6rem;
+  font-family: sans-serif; }
+
+.heading-4 {
+  font-size: 1.1rem;
+  font-family: sans-serif; }
+
 .course {
   background-color: #000; }
 
 .gol {
-  background-color: yellow; }
+  margin: 1rem 3rem 3rem 3rem; }
+  .gol__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 16rem 2fr;
+    gap: 1.5rem; }
+  .gol__box {
+    background-color: rgba(255, 192, 203, 0.2);
+    padding: 2.2rem 2rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem; }
+    .gol__box-header {
+      display: flex;
+      justify-content: space-between; }
+    .gol__box-icon {
+      height: 2.2rem;
+      width: 2.2rem;
+      color: #000; }
+    .gol__box-link {
+      text-decoration: none;
+      font-size: 1.2rem; }
+    .gol__box-sold {
+      font-size: 2.5rem;
+      font-family: sans-serif;
+      color: lightgrey; }
+    .gol__box-text {
+      display: flex;
+      justify-content: space-between; }
+      .gol__box-text-1 {
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        color: #000; }
+      .gol__box-text-2 {
+        font-size: 1.2rem;
+        color: #000; }
+    .gol__box-meter {
+      height: 0.8rem;
+      position: relative;
+      background-color: #fff;
+      border: none;
+      border-radius: 10px;
+      overflow: hidden; }
+      .gol__box-meter span {
+        display: block;
+        border-radius: 10px;
+        border: none;
+        height: 100%; }
+    .gol__box-count {
+      background-color: #000; }
+  .gol__plan {
+    background-color: rgba(0, 255, 255, 0.1);
+    grid-row: 2 / -2;
+    border-radius: 15px; }
+    .gol__plan-box {
+      padding: 2rem;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 2.6rem; }
+    .gol__plan-text {
+      display: flex;
+      justify-content: space-between; }
+    .gol__plan-content {
+      display: flex;
+      align-items: center;
+      gap: 1rem; }
+    .gol__plan-link {
+      box-sizing: border-box;
+      background-color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      height: 3rem;
+      width: 3rem; }
+    .gol__plan-icon {
+      height: 1.5rem;
+      width: 1.5rem;
+      color: red;
+      padding-top: 0.7rem; }
+      .gol__plan-icon-1 {
+        height: 1.5rem;
+        width: 1.5rem;
+        color: blue;
+        padding-top: 0.7rem; }
+      .gol__plan-icon-2 {
+        height: 1.5rem;
+        width: 1.5rem;
+        color: aqua;
+        padding-top: 0.7rem; }
+    .gol__plan-sold {
+      font-size: 1.4rem;
+      font-family: sans-serif;
+      color: grey; }
+    .gol__plan-btn {
+      border: none;
+      border-radius: 12px;
+      background-color: rgba(255, 255, 255, 0.6);
+      height: 3rem;
+      width: 3rem; }
+      .gol__plan-btn-icon {
+        height: 1.4rem;
+        width: 1.4rem;
+        padding-top: 0.2rem; }
+  .gol__people {
+    background-color: rgba(0, 0, 255, 0.1);
+    grid-row: 1 / -1;
+    border-radius: 15px; }
+    .gol__people-box {
+      padding: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 9rem; }
+    .gol__people-number {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem; }
+      .gol__people-number-num {
+        font-size: 1.8rem;
+        color: lightgrey; }
+        .gol__people-number-num-1 {
+          font-size: 1.8rem;
+          color: rgba(0, 0, 255, 0.9); }
+    .gol__people-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem; }
+    .gol__people-sold {
+      font-size: 1rem;
+      font-family: sans-serif;
+      color: grey; }
+    .gol__people-img {
+      display: flex;
+      gap: 0.6rem;
+      align-items: center; }
+      .gol__people-img-box {
+        height: 1.8rem;
+        width: 1.8rem;
+        border-radius: 50%; }
+      .gol__people-img-text {
+        font-size: 1rem;
+        color: grey; }
+  .gol__text {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding: 3rem 0; }
+
+.tutor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 3rem;
+  column-gap: 2rem; }
+  .tutor__content {
+    background-color: red;
+    padding: 2rem;
+    border-radius: 15px; }
+    .tutor__content-box {
+      display: flex;
+      justify-content: space-between; }
+  .tutor__img {
+    display: flex; }
+    .tutor__img-box {
+      height: 3rem;
+      width: 3rem;
+      border-radius: 6px; }
 
 .header {
   margin: 3rem; }
@@ -123,7 +297,15 @@ body {
     color: grey; }
 
 .sidebar {
-  margin: 1rem 3rem; }
+  margin: 1rem 3rem 3rem 3rem; }
+  .sidebar__box {
+    display: flex;
+    flex-direction: column;
+    gap: 17rem; }
+    .sidebar__box-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem; }
   .sidebar__container {
     display: flex;
     flex-direction: column;
@@ -151,7 +333,58 @@ body {
       display: flex;
       box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
       padding: 1rem;
-      border-radius: 10px; }
+      border-radius: 10px;
+      transition: all .2s; }
+  .sidebar__content {
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    padding: 1.4rem 1rem; }
+    .sidebar__content-box {
+      display: flex;
+      gap: 1rem;
+      align-items: center; }
+    .sidebar__content-flash {
+      box-sizing: border-box;
+      background-color: #000;
+      color: #fff;
+      border-radius: 10px;
+      padding: 0.8rem; }
+    .sidebar__content-icon {
+      height: 1.6rem;
+      width: 1.6rem; }
+  .sidebar__text {
+    display: flex;
+    flex-direction: column; }
+    .sidebar__text-header {
+      font-size: 1.2rem;
+      font-family: sans-serif; }
+    .sidebar__text-sold {
+      font-size: 1rem;
+      font-family: sans-serif;
+      color: lightgrey; }
+
+.update {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  padding: 2rem 1.5rem; }
+  .update__box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+  .update__header {
+    font-size: 2rem;
+    font-family: sans-serif; }
+  .update__sold {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color: lightgrey; }
+  .update__text {
+    font-size: 1rem;
+    font-family: sans-serif; }
 
 .user {
   margin: 3rem 3rem 1rem 3rem; }

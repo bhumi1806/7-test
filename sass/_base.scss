@@ -17,6 +17,7 @@ body{
 }
 
 .container{
+    height: 100vh;
     display: grid;
     grid-template-columns: 24rem 4fr 3fr;
     grid-template-rows: 2fr 5fr;
