@@ -1,3 +1,130 @@
 .course{
-    background-color: #000;
+    background-color: rgba(pink, .2);
+    margin: 1rem 3rem 3rem 3rem;
+
+    &__container{
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__heading{
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        color: lightgrey;
+
+        &:first-child{
+            color: #000;
+        }
+    }
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+
+    &__box{
+        display: flex;
+        background-color: rgba(lightgrey, 0.3);
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 0.4rem 0.8rem;
+        width: 17rem;
+    }
+
+    &__heading{
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        color: #000;
+    }
+
+    &__caret{
+        display: flex;
+        flex-direction: column;
+
+        &-icon{
+            height: 1.4rem;
+            width: 1.4rem;
+            color: grey;
+        }
+    }
+}
+
+.figma{
+    padding: 1rem;
+    background-color: rgba(aqua, .2);
+    border-radius: 20px;
+
+    &__content{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1.2rem;
+    }
+
+    &__box{
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color: rgba(#fff, .7);
+        padding: 1.7rem;
+    }
+
+    &__img{
+        height: 8rem;
+        width: 7.5rem;
+        border-radius: 10px;
+    }
+
+    &__text{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0.8rem;
+    }
+
+    &__time{
+        display: flex;
+        gap: 2rem;
+
+        &-heading{
+            font-size: 1rem;
+            font-family: sans-serif;
+            color: grey;
+        }
+
+        &-list{
+            font-size: 1rem;
+            font-family: sans-serif;
+            color: grey;
+        }
+    }
+
+    &__sold{
+        font-size: 1rem;
+        font-family: sans-serif;
+        color: grey;
+    }
+
+    &__header{
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        color: #000;
+    }
+}
+
+.number{
+    display: flex;
+
+    &__box{
+        background-color: rgba(blue, .1);
+    }
+
+    &__code{
+
+    }
+
+    &__text{
+
+    }
 }

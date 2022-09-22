@@ -37,7 +37,89 @@ body {
   font-family: sans-serif; }
 
 .course {
-  background-color: #000; }
+  background-color: rgba(255, 192, 203, 0.2);
+  margin: 1rem 3rem 3rem 3rem; }
+  .course__container {
+    display: flex;
+    gap: 2rem; }
+  .course__heading {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color: lightgrey; }
+    .course__heading:first-child {
+      color: #000; }
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0; }
+  .price__box {
+    display: flex;
+    background-color: rgba(211, 211, 211, 0.3);
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 0.4rem 0.8rem;
+    width: 17rem; }
+  .price__heading {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color: #000; }
+  .price__caret {
+    display: flex;
+    flex-direction: column; }
+    .price__caret-icon {
+      height: 1.4rem;
+      width: 1.4rem;
+      color: grey; }
+
+.figma {
+  padding: 1rem;
+  background-color: rgba(0, 255, 255, 0.2);
+  border-radius: 20px; }
+  .figma__content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.2rem; }
+  .figma__box {
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1.7rem; }
+  .figma__img {
+    height: 8rem;
+    width: 7.5rem;
+    border-radius: 10px; }
+  .figma__text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0.8rem; }
+  .figma__time {
+    display: flex;
+    gap: 2rem; }
+    .figma__time-heading {
+      font-size: 1rem;
+      font-family: sans-serif;
+      color: grey; }
+    .figma__time-list {
+      font-size: 1rem;
+      font-family: sans-serif;
+      color: grey; }
+  .figma__sold {
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: grey; }
+  .figma__header {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color: #000; }
+
+.number {
+  display: flex; }
+  .number__box {
+    background-color: rgba(0, 0, 255, 0.1); }
 
 .gol {
   margin: 1rem 3rem 3rem 3rem; }
@@ -194,18 +276,45 @@ body {
   row-gap: 3rem;
   column-gap: 2rem; }
   .tutor__content {
-    background-color: red;
-    padding: 2rem;
+    box-shadow: 0.1rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
+    padding: 1.5rem 1.8rem;
     border-radius: 15px; }
     .tutor__content-box {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      align-items: center; }
   .tutor__img {
-    display: flex; }
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
     .tutor__img-box {
-      height: 3rem;
-      width: 3rem;
+      height: 2.8rem;
+      width: 2.8rem;
       border-radius: 6px; }
+  .tutor__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem; }
+  .tutor__name {
+    color: #000;
+    font-size: 1rem;
+    font-family: sans-serif; }
+  .tutor__sold {
+    color: lightgrey;
+    font-size: 0.8rem;
+    font-family: sans-serif; }
+  .tutor__btn {
+    border: none;
+    border-radius: 50%;
+    height: 2.4rem;
+    width: 2.4rem;
+    background-color: #fff;
+    box-shadow: 0.1rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2); }
+    .tutor__btn-mail {
+      color: lightgrey;
+      height: 1.4rem;
+      width: 1.4rem;
+      padding-top: 0.4rem; }
 
 .header {
   margin: 3rem; }
@@ -369,7 +478,7 @@ body {
   box-sizing: border-box;
   background-color: #fff;
   border-radius: 15px;
-  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 192, 203, 0.2);
   padding: 2rem 1.5rem; }
   .update__box {
     display: flex;
