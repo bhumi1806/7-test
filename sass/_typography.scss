@@ -1,6 +1,10 @@
 .heading-1{
     font-size: 2.5rem;
     font-family: sans-serif;
+
+    @media only screen and (max-width: $bp-smallest){
+        font-size: 2.2rem;
+    }
 }
 
 .heading-2{

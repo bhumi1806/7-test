@@ -1,6 +1,13 @@
 .user{
-    // background-color: gray;
     margin: 3rem 3rem 1rem 3rem;
+
+    @media only screen and (max-width: $bp-largest){
+        margin: 2.6rem 2.6rem 0.6rem 2.6rem;
+    }
+
+    @media only screen and(max-width: $bp-medium){
+        grid-column: 1 / span 2;
+    }
 
     &__box{
         display: flex;
@@ -12,12 +19,26 @@
         display: flex;
         justify-content: space-around;
 
+        @media only screen and(max-width: $bp-medium){
+            display: flex;
+            justify-content: start;
+            gap: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest){
+            gap: 1.5rem;
+        }
+        
+        @media only screen and (max-width: $bp-smallest){
+            flex-wrap: wrap;
+        }
+
         &-box{
             height: 3rem;
             width: 3rem;
             border-radius: 10px;
             outline-offset: 0.3rem;
-            outline: 2px solid grey;
+            outline: 2px solid lightgrey;
         }
     }
 

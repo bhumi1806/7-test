@@ -1,11 +1,24 @@
 .header{
-    // background-color: #fff;
     margin: 3rem;
+
+    @media only screen and (max-width: $bp-largest){
+        margin: 2.6rem;
+    }
+
+    @media only screen and(max-width: $bp-medium){
+        grid-column: 1 / -1;
+    }
 
     &__box{
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 2.2rem;
+
+        @media only screen and(max-width: $bp-medium){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
 
         &-text{
             display: flex;
@@ -31,8 +44,8 @@
     }
 
     &__user{
-        height: 3rem;
-        width: 3rem;
+        height: 3.6rem;
+        width: 3.6rem;
         border-radius: 50%;
     }
 }

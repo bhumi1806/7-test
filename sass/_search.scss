@@ -1,6 +1,13 @@
 .search{
-    // background-color: green;
     margin: 3rem 3rem 1rem 3rem;
+
+    @media only screen and (max-width: $bp-largest){
+        margin: 2.6rem 2.6rem 0.6rem 2.6rem;
+    }
+
+    @media only screen and(max-width: $bp-medium){
+        grid-column: 1 / span 2;
+    }
 
     &__content{
         display: flex;
@@ -12,6 +19,10 @@
         display: flex;
         justify-content: end;
         gap: 2rem;
+
+        @media only screen and(max-width: $bp-medium){
+            display: none;
+        }
 
         &-person{
             height: 2rem;
@@ -39,17 +50,24 @@
         display: flex;
         justify-content: space-between;
 
+        @media only screen and(max-width: $bp-medium){
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-small){
+            gap: 1.6rem;
+        }
+
         &-btn{
             display: flex;
             align-items: center;
             margin-left: 1rem;
-            // justify-content: center;
-            // padding-top: 1.5rem;
-            // padding-bottom: 3rem;
         }
 
         &-box{
-            background-color: #000;
+            background-color: #3E250A;
             color: #fff;
             padding: 1rem 2rem;
             border-radius: 10px;
@@ -72,6 +90,18 @@
         &::-webkit-input-placeholder{
             font-weight: 100;
             color: grey;
+        }
+
+        @media only screen and(max-width: $bp-large){
+            width: 25rem;
+        }
+
+        @media only screen and(max-width: $bp-medium){
+            width: 50rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest){
+            width: 25rem;
         }
     }
 
