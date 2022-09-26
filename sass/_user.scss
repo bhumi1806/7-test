@@ -39,6 +39,13 @@
             border-radius: 10px;
             outline-offset: 0.3rem;
             outline: 2px solid lightgrey;
+
+            &:hover,
+            &:active{
+                outline: 2px solid grey;
+                height: 3.5rem;
+                width: 3.5rem;
+            }
         }
     }
 

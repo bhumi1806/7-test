@@ -67,7 +67,7 @@
 .figma{
     padding: 1rem;
     background-color: rgba(aqua, .1);
-    border-radius: 20px;
+    border-radius: 15px;
     margin: 2.8rem 0;
 
     @media only screen and (max-width: $bp-smallest){
@@ -156,7 +156,7 @@
 
     &__box{
         background-color: rgba(blue, .1);
-        border-radius: 20px;
+        border-radius: 12px;
         padding: 4rem;
         display: flex;
         flex-direction: column;
