@@ -20,7 +20,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 24rem 4fr 3fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 16rem 5fr;
   gap: 1.5rem; }
   @media only screen and (max-width: 78em) {
     .container {
@@ -31,13 +31,17 @@ body {
   @media only screen and (max-width: 50em) {
     .container {
       grid-template-columns: 55% 45%;
-      grid-template-rows: 8rem 6rem 10rem 17rem 5fr;
+      grid-template-rows: 8rem 6rem 9rem 13rem 5fr;
       row-gap: 0.6rem;
       column-gap: 0; } }
   @media only screen and (max-width: 37.5em) {
     .container {
       grid-template-columns: none;
-      grid-template-rows: 1fr 1fr 7rem 7rem 5fr 5fr; } }
+      grid-template-rows: 1fr 1fr 7rem 14rem 5fr 5fr; } }
+  @media only screen and (max-width: 31em) {
+    .container {
+      grid-template-columns: none;
+      grid-template-rows: 1fr 1fr 7rem 3fr 5fr 5fr; } }
 
 .heading-1 {
   font-size: 2.5rem;
@@ -555,7 +559,7 @@ body {
   .search__icon-btn {
     height: 2rem;
     width: 2rem;
-    color: grey; }
+    color: lightgrey; }
 
 .sidebar {
   margin: 1rem 3rem 3rem 3rem; }
@@ -567,7 +571,8 @@ body {
       margin: 0.8rem 2rem 2rem 2rem; } }
   @media only screen and (max-width: 50em) {
     .sidebar {
-      grid-column: 1 / span 2; } }
+      grid-column: 1 / span 2;
+      margin: 0.8rem 2rem 0.8rem 0; } }
   @media only screen and (max-width: 37.5em) {
     .sidebar {
       grid-column: 1 / span 1;
@@ -575,7 +580,10 @@ body {
   .sidebar__box {
     display: flex;
     flex-direction: column;
-    gap: 17rem; }
+    gap: 13rem; }
+    @media only screen and (max-width: 78em) {
+      .sidebar__box {
+        gap: 15rem; } }
     .sidebar__box-text {
       display: flex;
       flex-direction: column;
@@ -597,7 +605,9 @@ body {
       .sidebar__container {
         display: flex;
         flex-direction: row;
-        justify-content: space-around; } }
+        justify-content: space-around;
+        box-shadow: none;
+        padding: 1rem 2rem; } }
     @media only screen and (max-width: 37.5em) {
       .sidebar__container {
         display: flex;
@@ -652,7 +662,8 @@ body {
       .sidebar__content {
         display: flex;
         align-items: center;
-        padding: 2rem; } }
+        padding: 2rem;
+        box-shadow: none; } }
     @media only screen and (max-width: 37.5em) {
       .sidebar__content {
         display: none; } }
@@ -685,7 +696,11 @@ body {
   background-color: #fff;
   border-radius: 15px;
   background-color: rgba(255, 192, 203, 0.2);
-  padding: 2rem 1.5rem; }
+  padding: 2rem 3.5rem 2rem 1.5rem;
+  position: relative; }
+  @media only screen and (max-width: 62.5em) {
+    .update {
+      padding: 2rem 4.5rem 2rem 1.5rem; } }
   @media only screen and (max-width: 50em) {
     .update {
       display: none; } }
@@ -705,6 +720,20 @@ body {
     font-size: 1rem;
     font-family: sans-serif;
     color: #711EC0; }
+  .update__img {
+    height: 17rem;
+    width: 9rem;
+    position: absolute;
+    left: 10rem;
+    bottom: 1rem; }
+    @media only screen and (max-width: 78em) {
+      .update__img {
+        height: 15rem;
+        left: 11rem; } }
+    @media only screen and (max-width: 62.5em) {
+      .update__img {
+        height: 15rem;
+        left: 12rem; } }
 
 .user {
   margin: 3rem 3rem 1rem 3rem; }
@@ -721,28 +750,30 @@ body {
   @media only screen and (max-width: 37.5em) {
     .user {
       grid-column: 1 / span 1;
-      margin: 0 2rem 0.5rem 2rem; } }
+      margin: 1.6rem 2rem 0.5rem 2rem; } }
   @media only screen and (max-width: 31em) {
     .user {
-      margin: 2rem 2rem 0.5rem 2rem; } }
+      margin: 3.6rem 2rem 0.5rem 2rem; } }
   .user__box {
     display: flex;
     flex-direction: column;
     gap: 5rem; }
+    @media only screen and (max-width: 50em) {
+      .user__box {
+        gap: 4rem; } }
   .user__img {
     display: flex;
-    justify-content: space-between; }
+    gap: 4.2rem; }
     @media only screen and (max-width: 50em) {
       .user__img {
         display: flex;
-        justify-content: start;
-        gap: 3rem; } }
+        justify-content: start; } }
     @media only screen and (max-width: 37.5em) {
       .user__img {
-        display: none; } }
+        display: flex; } }
     @media only screen and (max-width: 31em) {
       .user__img {
-        gap: 1.5rem;
+        gap: 2.5rem;
         flex-wrap: wrap; } }
     .user__img-box {
       height: 3rem;
