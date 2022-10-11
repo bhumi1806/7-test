@@ -5,8 +5,22 @@
         margin: 2.6rem 2.6rem 0.6rem 2.6rem;
     }
 
+    @media only screen and(max-width: $bp-large){
+        margin: 2rem 1rem 0.6rem 1rem;
+    }
+
     @media only screen and(max-width: $bp-medium){
-        grid-column: 1 / span 2;
+        grid-row: 4 / span 1;
+        margin: 1rem 2.5rem 0 2.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        grid-column: 1 / span 1;
+        margin: 0 2rem 0.5rem 2rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest){
+        margin: 2rem 2rem 0.5rem 2rem;
     }
 
     &__box{
@@ -25,11 +39,12 @@
             gap: 3rem;
         }
 
+        @media only screen and(max-width: $bp-small){
+            display: none;
+        }
+
         @media only screen and (max-width: $bp-smallest){
             gap: 1.5rem;
-        }
-        
-        @media only screen and (max-width: $bp-smallest){
             flex-wrap: wrap;
         }
 

@@ -5,8 +5,16 @@
         margin: 2.6rem;
     }
 
+    @media only screen and(max-width: $bp-large){
+        margin: 2rem;
+    }
+
     @media only screen and(max-width: $bp-medium){
         grid-column: 1 / -1;
+    }
+
+    @media only screen and(max-width: $bp-small){
+        grid-column: 1 / span 1;
     }
 
     &__box{

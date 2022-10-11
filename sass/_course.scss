@@ -5,13 +5,19 @@
         margin: 0.8rem 2.6rem 2.6rem 2.6rem;
     }
 
-    @media only screen and(max-width: $bp-medium){
-        display: none;
+    @media only screen and(max-width: $bp-large){
+        margin: 0.8rem 2rem 2rem 2rem;
     }
 
-    @media only screen and (max-width: $bp-smallest){
+    @media only screen and(max-width: $bp-medium){
         display: flex;
         flex-direction: column;
+        grid-row: 5 / span 1;
+        margin: 1.5rem 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        grid-row: 6 / span 1;
     }
 
     &__container{
@@ -36,9 +42,13 @@
     gap: 1rem;
     margin: 2rem 0;
 
+    @media only screen and(max-width: $bp-medium){
+        margin: 1.6rem 0;
+    }
+
     &__box{
         display: flex;
-        background-color: rgba(lightgrey, 0.3);
+        background-color: rgba(blue, .1);
         justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
@@ -70,6 +80,10 @@
     border-radius: 15px;
     margin: 2.8rem 0;
 
+    @media only screen and(max-width: $bp-medium){
+        margin: 1.7rem 0;
+    }
+
     @media only screen and (max-width: $bp-smallest){
         margin: 2rem 0;
     }
@@ -89,6 +103,8 @@
         border-radius: 10px;
         background-color: rgba(#fff, .7);
         padding: 1.7rem;
+        display: flex;
+        justify-content: center;
     }
 
     &__img{
@@ -96,8 +112,9 @@
         width: 7.5rem;
         border-radius: 10px;
 
-        @media only screen and (max-width: $bp-smallest){
-            width: 8rem;
+        @media only screen and (max-width: $bp-small){
+            height: 10rem;
+            width: 11rem;
         }
     }
 
@@ -150,8 +167,8 @@
     gap: 2rem;
     margin: 2.8rem 0;
 
-    @media only screen and (max-width: $bp-smallest){
-        display: none;
+    @media only screen and(max-width: $bp-medium){
+        margin: 1.7rem 0;
     }
 
     &__box{
@@ -161,11 +178,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        @media only screen and(max-width: $bp-large){
-            height: 14.8rem;
-            width: 16rem;
-        }
     }
 
     &__code{
